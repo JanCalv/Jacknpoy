@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack N Poy by: Calvin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <div class="game-title-section">
+            <h1 class = "game-title-text">
+                Let's play <span class="game-title-span">Jack n Poy!</span>
+            </h1>
+            <p class = "game-title-ins">It is you versus the computer so do your best!</p>
+        </div>
+
+        <div class="score-section">
+            <h2 class="score-text">Score:</h2>
+                <div class="score-board">
+                    <div class="score-wrapper">
+                       <h3>You:</h3> 
+                       <p class = "your-score">0</p>
+                    </div>
+                    <div class="score-wrapper">
+                        <h3>Computer:</h3>
+                        <p class = "comp-score">0</p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="selection-section">
+            <div class="selection-text">
+                <h2 class = "choose">Choose:</h2>
+            </div>
+            <div class="choices">
+                <div class = "img-div paper"><img class = "choices-img" src="image/paper.png" alt="paper"></div>
+                <div class = "img-div rock"><img class = "choices-img" src="image/rock.png" alt="rock"></div>
+                <div class = "img-div scissor"><img class = "choices-img" src="image/scissor.png" alt="scissor"></div>     
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="reset-btn">
+                <button class="restart-game">Restart Game</button>
+            </div>
+        </div>  
+    
+    </div>
+
+    <div class="modal">
+        <div class="modal-result">
+            <div class="modal-items">
+                <h2 class = "modal-text">You:</h2>
+                <div class = "img-div"><img class = "choices-img modal-img" src="image/rock.png" alt="rock"></div>
+            </div>
+            <div class="modal-items">
+                <h2 class = "modal-text">Computer:</h2>
+                <div class = "img-div"><img class = "choices-img comp-img" src="image/rock.png" alt="rock"></div>
+            </div>
+            <div class="result-div">
+                <h1 class="result-text">You Win!</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

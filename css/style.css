@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {  
+    font-family: 'Fredoka One', cursive;
+    background-color: #00bdaa;
+}
+
+.game-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-title-section {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: .5em;
+}
+.game-title-span {
+    color: #fe346e;
+}
+.game-title-ins{
+    font-size: .9em;
+    padding: .7em;
+}
+
+
+.score-section{
+    color: #fe346e;
+    font-size: 1.6em;
+    padding: .7em;
+    text-align: center;
+    background-color: #f1e7b6;
+}
+.score-text{
+    font-size: 1.8em;
+}
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.score-wrapper{
+    margin: 1em;
+}
+
+
+
+.selection-section{
+    color: white;
+    padding: 1em;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.img-div:hover{
+    background-color: #fe346e;
+}
+
+
+
+
+.modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0,0.9);
+    display: none;
+}
+.modal-result {
+    background-color: white;
+    padding: 2em ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.modal-items{
+    margin: 1em;
+}
+
+
+.restart-game{
+    background-color: #fe346e;
+    color: white;
+    font-size: 1.5em;
+    padding: 1em;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.restart-game:hover{
+    background-color: rgb(254, 52, 70);
+}
+
+.choices-img{
+    width: 50%;
+}
+
+
+@media only screen and (min-width: 760px){
+    .game-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .game-title-section {
+        font-size: 2em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .game-title-ins{
+        font-size: 1em;
+    }
+    
+
+    
+    .score-section{
+        color: #fe346e;
+        font-size: 2em;
+        padding: .7em 6em;
+        text-align: center;
+        background-color: #f1e7b6;
+    }
+    .score-text{
+        font-size: 2em;
+    }
+    .your-score, .comp-score {
+        font-size: 1.4em;
+    }
+
+    
+    
+    .selection-section{
+        color: white;
+        padding: 1em;
+    }
+    .choose{
+        font-size: 2em;
+    }
+    .choices{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .img-div{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s;
+        width: 100%;
+    }
+    .img-div:hover{
+        background-color: #fe346e;
+    }
+    
+    
+    
+    .modal{
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0,0.9);
+        display: none;
+    }
+    .modal-result {
+       font-size: 1.5em;
+    }
+
+    
+    .restart-game{
+        font-size: 1.8em;
+        margin-top: 2em;
+    }
+
+    .choices-img{
+        width: 30%;
+    } 
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .game-title-section {
+        font-size: 2em;
+
+    }
+
+  
+    .score-section{
+        font-size: 2em;
+    }
+
+    
+    .selection-section{
+        padding: 2em;
+        margin-top: 2em;
+    }
+    .choose{
+        margin-left: 4em;
+    }
+    .img-div{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        transition: .2s;
+        width: 20%;
+    }
+
+    
+    
+    
+    .modal{
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0,0.9);
+        display: none;
+    }
+    .modal-result {
+       font-size: 1em;   
+    }
+  
+    .restart-game{
+        font-size: 1.8em;
+        margin-top: .5em;
+    }
+
+
+}
+
+
+
+
